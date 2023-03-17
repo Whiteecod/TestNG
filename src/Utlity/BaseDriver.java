@@ -32,7 +32,7 @@ public class BaseDriver {
         driver.manage().timeouts().pageLoadTimeout(dr);
         driver.manage().timeouts().implicitlyWait(dr);
         wait = new WebDriverWait(driver,Duration.ofSeconds(30));
-
+        loginTest();
     }
     @AfterClass
     public void bitisIslemler() {
